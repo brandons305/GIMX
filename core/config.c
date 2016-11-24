@@ -77,7 +77,7 @@ static s_mouse_control mouse_control[MAX_DEVICES] = {};
 
 /*
  * This lists controls of each controller configuration for all joysticks.
- */
+ */dz
 static s_mapper_table joystick_buttons[MAX_DEVICES][MAX_CONTROLLERS][MAX_CONFIGURATIONS];
 static s_mapper_table joystick_axes[MAX_DEVICES][MAX_CONTROLLERS][MAX_CONFIGURATIONS];
 
@@ -965,7 +965,7 @@ static double mouse2axis(int device, s_adapter* controller, int which, double x,
     /*
      * Subtract the first position to the dead zone (useful for high multipliers).
      */
-    dz = dz - multiplier;// * pow(1, exp);
+    
   }
   
   if(mode == E_MOUSE_MODE_AIMING)
